@@ -1,0 +1,28 @@
+{
+    "app": {
+        "title": "Base64 Encoder & Decoder",
+        "description": "Professional tool for encoding and decoding Base64"
+    },
+    "encode": {
+        "title": "Encode",
+        "subtitle": "Text → Base64",
+        "inputLabel": "Plain Text",
+        "inputPlaceholder": "Enter text to encode...",
+        "button": "Encode to Base64",
+        "outputLabel": "Base64 Output",
+        "outputPlaceholder": "Base64 encoded output will appear here..."
+    },
+    "decode": {
+        "title": "Decode",
+        "subtitle": "Base64 → Text",
+        "inputLabel": "Base64 Input",
+        "inputPlaceholder": "Enter Base64 to decode...",
+        "button": "Decode from Base64",
+        "outputLabel": "Plain Text Output",
+        "outputPlaceholder": "Decoded text will appear here..."
+    },
+    "footer": {
+        "copyright": "Base64 Tool. All rights reserved.",
+        "createdBy": "Created by"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "app": {
+        "title": "Kodowanie i Dekodowanie Base64",
+        "description": "Profesjonalne narzędzie do kodowania i dekodowania Base64"
+    },
+    "encode": {
+        "title": "Kodowanie",
+        "subtitle": "Tekst → Base64",
+        "inputLabel": "Zwykły Tekst",
+        "inputPlaceholder": "Wprowadź tekst do zakodowania...",
+        "button": "Zakoduj do Base64",
+        "outputLabel": "Wynik Base64",
+        "outputPlaceholder": "Zakodowany tekst Base64 pojawi się tutaj..."
+    },
+    "decode": {
+        "title": "Dekodowanie",
+        "subtitle": "Base64 → Tekst",
+        "inputLabel": "Dane Base64",
+        "inputPlaceholder": "Wprowadź Base64 do odkodowania...",
+        "button": "Odkoduj z Base64",
+        "outputLabel": "Odkodowany Tekst",
+        "outputPlaceholder": "Odkodowany tekst pojawi się tutaj..."
+    },
+    "footer": {
+        "copyright": "Base64 Tool. Wszelkie prawa zastrzeżone.",
+        "createdBy": "Stworzył"
+    }
+}
