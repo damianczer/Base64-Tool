@@ -3,17 +3,17 @@
         "description": "Professional tool for encoding and decoding Base64"
     },
     "encode": {
-        "inputLabel": "Plain Text",
+        "inputLabel": "Text",
         "inputPlaceholder": "Enter text to encode...",
         "button": "Encode to Base64",
-        "outputLabel": "Base64 Output",
-        "outputPlaceholder": "Base64 encoded output will appear here..."
+        "outputLabel": "Output",
+        "outputPlaceholder": "Encoded text will appear here..."
     },
     "decode": {
-        "inputLabel": "Base64 Input",
+        "inputLabel": "Base64",
         "inputPlaceholder": "Enter Base64 to decode...",
         "button": "Decode from Base64",
-        "outputLabel": "Plain Text Output",
+        "outputLabel": "Output",
         "outputPlaceholder": "Decoded text will appear here..."
     },
     "footer": {
