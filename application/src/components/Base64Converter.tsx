@@ -1,5 +1,6 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Logo from './Logo';
 
 const Base64Converter = memo(() => {
     const { t } = useTranslation();
@@ -44,18 +45,29 @@ const Base64Converter = memo(() => {
 
     return (
         <div className="w-full max-w-6xl mx-auto px-4">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transition-colors duration-200">
-                <h1 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">
-                    {t('app.title')}
-                </h1>
+            <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-lg 
+            shadow-[0_10px_30px_rgba(0,0,0,0.15)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)] p-8 transition-all 
+            duration-200 border border-gray-200/50 dark:border-gray-700/50 relative">
+                <a
+                    href="https://en.wikipedia.org/wiki/Base64"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute top-4 right-4 w-6 h-6 md:w-8 md:h-8 flex items-center justify-center 
+                    rounded-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600
+                     text-white transition-colors duration-200 shadow-md font-bold text-sm md:text-lg"
+                    aria-label="What is Base64?"
+                    title="What is Base64?"
+                >
+                    ?
+                </a>
+                <div className="mb-8">
+                    <Logo />
+                </div>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-4">
-                        <div className="flex items-center justify-between">
-                            <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-200">{t('encode.title')}</h2>
-                            <span className="text-sm text-gray-500 dark:text-gray-400">{t('encode.subtitle')}</span>
-                        </div>
-                        <div className="space-y-3">
-                            <label htmlFor="encode-input" className="block text-sm font-medium text-gray-600 dark:text-gray-300">
+                        <div className="space-y-2">
+                            <label htmlFor="encode-input" className="block text-sm font-medium text-gray-600 
+                            dark:text-gray-300">
                                 {t('encode.inputLabel')}
                             </label>
                             <textarea
@@ -63,15 +75,15 @@ const Base64Converter = memo(() => {
                                 value={encodeInput}
                                 onChange={handleEncodeInputChange}
                                 className="w-full h-40 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                                focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none transition-all
-                                bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                                focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none 
+                                font-mono text-sm transition-all bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                                 placeholder={t('encode.inputPlaceholder')}
                             />
                             <button
                                 type="button"
                                 onClick={handleEncode}
-                                className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600
-                                 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200"
+                                className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 
+                                text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200"
                             >
                                 {t('encode.button')}
                             </button>
@@ -83,19 +95,16 @@ const Base64Converter = memo(() => {
                                 id="encode-output"
                                 value={encodeOutput}
                                 className="w-full h-40 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                                bg-gray-50 dark:bg-gray-900 resize-none font-mono text-sm text-gray-900 dark:text-gray-100"
+                                bg-gray-50 dark:bg-gray-900 resize-none text-gray-900 dark:text-gray-100 outline-none"
                                 placeholder={t('encode.outputPlaceholder')}
                                 readOnly
                             />
                         </div>
                     </div>
                     <div className="space-y-4">
-                        <div className="flex items-center justify-between">
-                            <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-200">{t('decode.title')}</h2>
-                            <span className="text-sm text-gray-500 dark:text-gray-400">{t('decode.subtitle')}</span>
-                        </div>
-                        <div className="space-y-3">
-                            <label htmlFor="decode-input" className="block text-sm font-medium text-gray-600 dark:text-gray-300">
+                        <div className="space-y-2">
+                            <label htmlFor="decode-input" className="block text-sm font-medium text-gray-600 
+                            dark:text-gray-300">
                                 {t('decode.inputLabel')}
                             </label>
                             <textarea
@@ -123,7 +132,7 @@ const Base64Converter = memo(() => {
                                 id="decode-output"
                                 value={decodeOutput}
                                 className="w-full h-40 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                                bg-gray-50 dark:bg-gray-900 resize-none text-gray-900 dark:text-gray-100"
+                                bg-gray-50 dark:bg-gray-900 resize-none text-gray-900 dark:text-gray-100 outline-none"
                                 placeholder={t('decode.outputPlaceholder')}
                                 readOnly
                             />

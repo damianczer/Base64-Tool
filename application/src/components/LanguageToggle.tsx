@@ -12,9 +12,9 @@ const LanguageToggle = memo(() => {
     return (
         <button
             onClick={toggleLanguage}
-            className="fixed top-4 right-4 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700
-            text-gray-800 dark:text-gray-100 font-semibold py-2 px-4 border border-gray-300 dark:border-gray-600 
-            rounded-lg shadow-md transition-all duration-200 flex items-center gap-2 z-50"
+            className="md:fixed md:top-4 md:right-4 w-[60px] bg-slate-800 dark:bg-slate-950 hover:bg-slate-700
+            dark:hover:bg-slate-900 text-gray-100 dark:text-gray-100 font-semibold py-2 px-4 border border-slate-700
+            dark:border-slate-800 rounded-lg shadow-md transition-all duration-200 flex items-center justify-center gap-2 md:z-50"
             aria-label="Change language"
         >
             <span className="text-sm font-medium">
