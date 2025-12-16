@@ -14,6 +14,8 @@ const Logo = memo(() => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="text-blue-600 dark:text-blue-400"
+                    role="img"
+                    aria-label="Base64 Tool logo"
                 >
                     <rect x="4" y="4" width="40" height="40" rx="8" stroke="currentColor" strokeWidth="2" fill="none" />
                     <text
@@ -46,7 +48,7 @@ const Logo = memo(() => {
                     </span>
                 </h1>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 text-sm text-center max-w-2xl">
+            <p className="text-gray-600 dark:text-gray-400 text-base text-center max-w-2xl">
                 {t('app.description')}
             </p>
         </div>

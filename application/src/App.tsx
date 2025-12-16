@@ -19,11 +19,19 @@ const AppContent = memo(() => {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
-      <div className="absolute inset-0">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 
+        focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+      >
+        Skip to main content
+      </a>
+
+      <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute top-0 left-0 right-0 h-[40%] bg-slate-800 dark:bg-slate-950" />
         <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gray-50 dark:bg-gray-900" />
         <svg className="absolute left-0 w-full" style={{ top: '40%', transform: 'translateY(-50%)', height: '80px' }}
-          viewBox="0 0 1200 80" preserveAspectRatio="none">
+          viewBox="0 0 1200 80" preserveAspectRatio="none" role="presentation">
           <path d="M0,40 L200,15 L400,55 L600,20 L800,50 L1000,18 L1200,45 L1200,80 L0,80 Z"
             fill="currentColor"
             className="text-gray-50 dark:text-gray-900" />
@@ -35,7 +43,7 @@ const AppContent = memo(() => {
           <ThemeToggle />
           <LanguageToggle />
         </div>
-        <main className="flex-grow flex items-center justify-center pt-4 pb-4 md:pt-16 md:pb-4 relative z-10">
+        <main id="main-content" className="flex-grow flex items-center justify-center pt-4 pb-4 md:pt-16 md:pb-4 relative z-10">
           <Base64Converter />
         </main>
         <Footer />
