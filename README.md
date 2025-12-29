@@ -40,7 +40,7 @@ Fast and reliable Base64 encoder/decoder with instant text-to-Base64 and Base64-
 Base64-Tool/
 ├── application/
 │   ├── public/
-│   │   └── vite.svg                    # Vite logo
+│   │   └── favicon.ico                 # Application favicon
 │   │
 │   ├── src/
 │   │   ├── components/
