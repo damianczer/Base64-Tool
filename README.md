@@ -27,12 +27,13 @@ Fast and reliable Base64 encoder/decoder with instant text-to-Base64 and Base64-
 
 **Key Features & Capabilities:**
 
-- Instant Base64 encoding and decoding with optimized algorithms.
-- Dark & Light mode.
-- Polish & English transaltions.
-- Persistent Settings - remembers your theme and language preferences.
-- 100% Client-Side - your data never leaves your browser.
-- Optimized for production (efficiency, safety, accessibility).
+- **Base64 Encoding/Decoding** - Fast, client-side text encoding and decoding
+- **Dark/Light Theme** - Smooth theme transitions with system preference detection
+- **Internationalization** - Full support for English and Polish languages
+- **Responsive Design** - Mobile-first approach, works on all devices
+- **Privacy Focused** - All operations performed locally in your browser
+- **Accessibility** - WCAG compliant with keyboard navigation and screen reader support
+- **Zero Server Dependency** - No data ever leaves your browser
 
 ## 📁 Project Architecture
 
@@ -47,6 +48,7 @@ Base64-Tool/
 │   │   │   ├── Base64Converter.tsx     # Main converter component
 │   │   │   ├── Footer.tsx              # Footer with author info
 │   │   │   ├── LanguageToggle.tsx      # i18n language switcher
+│   │   │   ├── LegalModal.tsx          # Privacy Policy & Terms modal
 │   │   │   ├── Logo.tsx                # Application logo
 │   │   │   ├── ThemeToggle.tsx         # Dark/Light mode toggle
 │   │   │   └── ThemeTransition.tsx     # Smooth theme transitions
