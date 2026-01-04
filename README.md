@@ -19,9 +19,9 @@
 
 Fast and reliable Base64 encoder/decoder with instant text-to-Base64 and Base64-to-text conversion using optimized algorithms.
 
-<img width="1899" height="906" alt="image" src="https://github.com/user-attachments/assets/066bfe88-2149-4960-909b-0768706701ce" />
+<img width="1892" height="904" alt="base64-light" src="https://github.com/user-attachments/assets/39d48d2f-7d0c-44ce-923d-8dadbf6fc836" />
 
-<img width="1898" height="903" alt="image" src="https://github.com/user-attachments/assets/fb4615f5-7597-4a59-9b17-7ebc6afa040b" />
+<img width="1896" height="900" alt="base64-dark" src="https://github.com/user-attachments/assets/0608e692-d0d7-48f1-b2af-ff3e93201c35" />
 
 </div>
 
