@@ -18,6 +18,34 @@
     },
     "footer": {
         "copyright": "Base64 Tool. Wszelkie prawa zastrzeżone.",
-        "createdBy": "Stworzył"
+        "createdBy": "Stworzył",
+        "privacyPolicy": "Polityka Prywatności",
+        "termsOfService": "Regulamin"
+    },
+    "legal": {
+        "closeModal": "Zamknij okno",
+        "privacy": {
+            "title": "Polityka Prywatności",
+            "content": [
+                "Base64 Tool to aplikacja działająca po stronie klienta, która przetwarza wszystkie dane lokalnie w Twojej przeglądarce.",
+                "Nie zbieramy, nie przechowujemy ani nie przesyłamy żadnych danych osobowych ani treści, które kodujesz/dekodujesz.",
+                "Wszystkie operacje kodowania i dekodowania są wykonywane całkowicie na Twoim urządzeniu bez komunikacji z serwerem.",
+                "Nie używamy plików cookie do celów śledzenia. Jedyne dane przechowywane lokalnie to Twoje preferencje (ustawienia motywu i języka).",
+                "W tej aplikacji nie są zintegrowane żadne usługi analityczne ani zewnętrzne usługi śledzenia.",
+                "Twoja prywatność jest w pełni chroniona, ponieważ żadne dane nigdy nie opuszczają Twojej przeglądarki."
+            ]
+        },
+        "terms": {
+            "title": "Regulamin",
+            "content": [
+                "Korzystając z Base64 Tool, akceptujesz niniejszy regulamin.",
+                "To narzędzie jest dostarczane 'tak jak jest' bez żadnych gwarancji, wyraźnych ani dorozumianych.",
+                "Możesz używać tego narzędzia do celów osobistych i komercyjnych bezpłatnie.",
+                "Nie ponosimy odpowiedzialności za jakiekolwiek szkody lub straty wynikające z korzystania z tego narzędzia.",
+                "Ponosisz wyłączną odpowiedzialność za treści, które kodujesz lub dekodujesz za pomocą tej aplikacji.",
+                "Zastrzegamy sobie prawo do modyfikacji lub zaprzestania świadczenia tej usługi w dowolnym momencie bez wcześniejszego powiadomienia.",
+                "Używanie tego narzędzia do jakichkolwiek nielegalnych działań jest surowo zabronione."
+            ]
+        }
     }
 }
