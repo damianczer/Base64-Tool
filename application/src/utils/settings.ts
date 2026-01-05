@@ -1,4 +1,4 @@
-const COOKIE_NAME = 'dc_base64_tool';
+const COOKIE_NAME = 'dc_base64_tool_settings';
 
 interface AppSettings {
     theme: 'light' | 'dark';
